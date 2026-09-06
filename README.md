@@ -1,5 +1,7 @@
 # PDF Tool — Merge & Split
 
+![CI](https://github.com/pavanbg7/pdf-tool/actions/workflows/ci.yml/badge.svg)
+
 A command-line tool for merging multiple PDFs into one, or splitting a PDF into multiple files, built to fail gracefully instead of crashing with a raw traceback
 
 ## Features
@@ -61,6 +63,26 @@ Creates one file per range: `pages_1-3.pdf`, `pages_5-5.pdf`, `pages_7-10.pdf`
 python pdf_main.py --help
 python pdf_main.py merge --help
 python pdf_main.py split --help
+```
+## Running with Docker
+
+You can run this tool without installing Python or any dependencies locally, using Docker.
+
+**Build the image:**
+```bash
+docker build -t pdf-tool .
+```
+
+**Run it** (mount a local folder so the container can read/write your files):
+```bash
+docker run -v "/path/to/your/files:/data" pdf-tool merge /data/file1.pdf /data/file2.pdf -o /data/merged.pdf
+```
+
+Replace `/path/to/your/files` with the folder on your machine containing your PDFs. All file paths in the command must use `/data/...` since that's the path *inside* the container.
+
+**See help:**
+```bash
+docker run pdf-tool --help
 ```
 
 ## Error Handling
