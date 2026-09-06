@@ -40,6 +40,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+"Choose One : Run locally OR via Docker"
 
 ### Merge PDFs
 ```bash
