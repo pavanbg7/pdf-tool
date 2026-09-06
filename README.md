@@ -17,7 +17,7 @@ A command-line tool for merging multiple PDFs into one, or splitting a PDF into 
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/<pavanbg7>/pdf-tool.git
+git clone https://github.com/pavanbg7/pdf-tool.git
 cd pdf-tool
 ```
 
