@@ -1,6 +1,6 @@
 # PDF Tool — Merge & Split
 
-![CI](https://github.com/pavanbg7/pdf-tool/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/pavanbg7/pdf-tool/actions/workflows/ci.yml/badge.svg)](https://github.com/pavanbg7/pdf-tool/actions/workflows/ci.yml)
 
 A command-line tool for merging multiple PDFs into one, or splitting a PDF into multiple files, built to fail gracefully instead of crashing with a raw traceback
 
