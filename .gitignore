@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+# Temp files from safe-write logic
+*.tmp
+# OS junk files
+.DS_Store
+Thumbs.db
+.pytest_cache/
